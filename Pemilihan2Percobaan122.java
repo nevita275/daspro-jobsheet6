@@ -7,14 +7,22 @@ public class Pemilihan2Percobaan122 {
         System.out.println("Masukkan Tahun :");
         int tahun = input22.nextInt();
 
-        if ((tahun % 4) == 0) {
-            if ((tahun % 100) == 100) {
+        if (tahun % 4 == 0) {
+            if (tahun % 100 != 0) {
                 System.out.println("Tahun Kabisat");   
             }
-            else {
-                System.out.println("Bukan Tahun Kabisat");
+            else if (tahun % 400 == 0) {
+                if (tahun % 100 != 0) {
+                    System.out.println("Tahun Kabisat");
+                }
+                else {
+                    System.out.println("Bukan Tahun Kabisat");
+                } 
             }
-            
+            else
+            {
+                System.out.println("Bukan Tahun Kabisat");       
+            }
         }
     }
 }
