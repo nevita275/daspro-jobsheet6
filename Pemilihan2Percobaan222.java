@@ -7,6 +7,7 @@ public class Pemilihan2Percobaan222 {
         int menu;
         String member;
         double harga;
+        
 
         System.out.println("-------------------------");
         System.out.println("===== MENU KAFE JTI =====");
@@ -71,6 +72,23 @@ public class Pemilihan2Percobaan222 {
             System.out.println("Member tidak valid");
         }
         System.out.println("--------------------------------");
+        
+        
+        int potongan = 0;
+
+         System.out.println("Masukkan jenis pembayaran (QRIS/yang lain) :");
+         String jenisPembayaran = input22.nextLine();
+
+         System.out.println("Apakah Anda member? (y/n) :");
+         String statusMember = input22.nextLine();
+
+         if (jenisPembayaran.equalsIgnoreCase("QRIS")) {
+            potongan = 1000; // Potongan Rp. 1.000 untuk QRIS
+            System.out.println("Besar potongan = 1.000");
+
+
+        }
+
     }
     
 }
